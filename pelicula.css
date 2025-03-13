@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'VintageMohaiNumbers';
+    src: url('MEDIA/fonts/Signature\ Moments.otf') format('opentype');
+    unicode-range: U+30-39; /* Unicode for digits 0-9 */
+}
+@font-face {
     font-family: 'VintageMohai';
     src: url('MEDIA/fonts/VintageMohai-DemoVersion-Regular.ttf') format('opentype');
     font-weight: normal;
@@ -8,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 body{
     margin: 0;
-    font-family: "VintageMohai";
+    font-family: "VintageMohai", "VintageMohaiNumbers", sans-serif;
     padding: 0;
     color: #d0a933;
     overflow-x: hidden;
@@ -67,10 +72,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8.5rem;
+    font-size: 9.5rem;
     font-weight: 200;
 }
-
+/* .main-text::after {
+    content: " 25"; 
+    font-family: "VintageMohaiNumbers", sans-serif;
+    font-size: 3rem;
+    font-weight: 1000; 
+} */
 /* about */
 .about{
     display: flex;
