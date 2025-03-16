@@ -11,6 +11,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Orbitron:wght@400..900&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Monomakh&family=Orbitron:wght@400..900&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap');
 body{
     margin: 0;
     font-family: "VintageMohai", "VintageMohaiNumbers", sans-serif;
@@ -182,7 +183,9 @@ hr {
     font-size: 7rem;
 }
 .cardcontainer{
-    font-family: Arial, sans-serif;
+    font-family: "roboto";
+    font-weight: 400;
+    font-style: normal;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -191,19 +194,20 @@ hr {
 }
 .card{
     display: flex;
+    gap: 0%;
     flex-direction: row;
     align-items: center;
     background: rgb(0, 0, 0);
     border-radius: 12px;
     padding: 15px;
-    width: 450px;
+    width: 1050px;
     box-shadow: 2px 2px 10px rgba(41, 40, 40, 0.1);
     border: 2px solid #d0a933;
 }
 
 .card .image-container img {
-    width:160px;
-    height: 160px;
+    width:180px;
+    height: 180px;
     border-radius: 8px;
     object-fit: cover;
     margin-right: 15px;
@@ -211,15 +215,28 @@ hr {
 
 .card .content {
     flex-grow: 1;
+    padding: 0%;
+    margin: 0%;
 }
-
+.content p{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+.content .year{
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
 .show-btn {
     background: #000000;
     border: 1px solid#d0a933;
-    padding: 5px 10px;
+    padding: 5px 8px;
     color: white;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     border-radius: 4px;
 }
 
@@ -228,8 +245,8 @@ hr {
     margin: 5px 0;
 }
 
-.time {
-    font-size: 14px;
+.content .time{
+    font-size: 12px !important;
     color: rgb(255, 255, 235);
 }
 
@@ -241,20 +258,14 @@ hr {
     background: #d0a933;
     border: 1px solid rgb(0, 0, 0);
     padding: 5px 10px;
-    font-size: 15px;
-    font-style: bold;
+    font-size: 12px;
+    font-weight: 600;
     margin-right: 5px;
     color: white;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.arrow {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    cursor: pointer;
-}
 /* open events */
 .open-events{
     background-color: #000000;
