@@ -325,3 +325,100 @@ footer {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+
+.event{
+    width: 500px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background-image: url('https://media.istockphoto.com/id/1613185319/vector/movie-and-film-festival-poster-template-design-background-modern-vintage-retro-style.jpg?s=612x612&w=0&k=20&c=DRP1GyZW4GFd0lZf-S358b4pG8dR5hpJgM8At5_d05Q=');
+    /* background-color: #0a0a0a; */
+    border-radius: 1rem;
+}
+.event-wrapper{
+    height: 100%;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0a933;
+    transition: opacity 0.3s ease-in-out;
+}
+.event h3{
+    font-size: 5rem;
+    color: #030303;
+}
+.event-wrapper:hover{
+    opacity: 0;
+}
+.event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.events-container{
+    padding: 30px;
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    gap: 20px;
+}
+.workshop_container{
+    padding: 30px;
+    /* height: 100vh; */
+    background-color: #030303;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.workshop_container h1 {
+    font-size: 12rem; /* Adjusted for better readability */
+    text-align: center;
+    letter-spacing: 5px;
+    color: #d0a933;
+    margin-bottom: 2rem;
+}
+.workshop_carousel{
+    background-color: #030303;
+    width: 550px;
+    aspect-ratio: 1/1;
+    /* display: flex;
+    justify-content: center; */
+    overflow: hidden;
+}
+.workshop_carousel .carousel-inner img{
+    width: 100%;
+}
+
+
+.image-swap-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-swap-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.detail-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-swap-container:hover .main-image {
+    opacity: 0;
+}
+
+.image-swap-container:hover .detail-image {
+    opacity: 1;
+}
